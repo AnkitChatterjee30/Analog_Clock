@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock ⌚</title>
+</head>
+<style>
+    #clock {
+        position: relative;
+        margin: auto;
+        height: 40vw;
+        /*to make the height and width responsive*/
+        width: 40vw;
+        background: url("Clock.jpg") ;
+        /*setting our background image*/
+        background-size: 100%;
+    }
+
+    #hour,
+    #minute,
+    #second {
+        position: absolute;
+        background: black;
+        border-radius: 10px;
+        transform-origin: bottom;
+    }
+
+    #hour {
+        width: 1.8%;
+        height: 25%;
+        top: 25%;
+        left: 48.85%;
+        opacity: 0.8;
+    }
+
+    #minute {
+        width: 1.6%;
+        height: 30%;
+        top: 19%;
+        left: 48.9%;
+        opacity: 0.8;
+    }
+
+    #second {
+        width: 1%;
+        height: 40%;
+        top: 9%;
+        left: 49.25%;
+        opacity: 0.8;
+    }
+    h1{
+        position: absolute;
+        font-size: 40px;
+        margin-left:100px ;
+        margin-top: 200px;
+    }
+    h1 a{
+        text-decoration: none;
+        color: black;
+    }
+    h1 a:hover{
+        color: green;
+    }
+</style>
+
+<body>
+    <h1>Analog Clock <p>Made by <br><a href="https://www.linkedin.com/in/ankit-chatterjee-99233321a/">Ankit Chatterjee</a></p></h1>
+    <div id="clock">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
